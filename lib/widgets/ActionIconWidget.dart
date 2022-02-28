@@ -5,8 +5,9 @@ import '../constants/size.dart';
 
 class ActionIconWidget extends StatelessWidget {
   final String images;
+  final bool isBorder;
 
-  const ActionIconWidget({Key? key, required this.images}) : super(key: key);
+  const ActionIconWidget({Key? key, required this.images, this.isBorder = true}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -23,7 +24,7 @@ class ActionIconWidget extends StatelessWidget {
             borderRadius: const BorderRadius.all(
               Radius.circular(s12),
             ),
-            border: Border.all(color: secondary)),
+            border: Border.all(color: isBorder ? secondary : Colors.transparent)),
         child: Image.asset(images),
       ),
     );

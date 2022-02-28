@@ -22,7 +22,7 @@ class MyApp extends StatelessWidget {
           // return GetMaterialApp(
           //   debugShowCheckedModeBanner: false,
           //   title: "Application",
-          //   initialRoute: Routes.ON_BOARDING_SCREEN,
+          //   initialRoute: Routes.DETAIL_SCREEN,
           //   getPages: AppPages.routes,
           // );
           if(snapshot.connectionState == ConnectionState.waiting){

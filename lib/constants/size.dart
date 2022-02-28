@@ -9,5 +9,6 @@ const double s33 = 33;
 const double s35 = 35;
 const double s36 = 36;
 const double s40 = 40;
+const double s44 = 44;
 const double s46 = 46;
 const double s144 = 144;

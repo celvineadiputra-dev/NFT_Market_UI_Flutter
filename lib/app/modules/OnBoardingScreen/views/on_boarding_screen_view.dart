@@ -56,11 +56,12 @@ class OnBoardingScreenView extends GetView<OnBoardingScreenController> {
               ),
               child: TextButton(
                 onPressed: () {
-                  Get.to(HomeView());
+                  // Get.to(HomeView());
+                  Get.offAllNamed(Routes.HOME);
                 },
                 child: Text(
                   'Explore NFTs',
-                  style: medium.copyWith(color: white),
+                  style: bold.copyWith(color: white),
                 ),
               ),
             )
